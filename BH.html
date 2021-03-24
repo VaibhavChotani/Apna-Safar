@@ -1,0 +1,227 @@
+<html>
+<head>
+<title>
+Beach Holidays | ApnaSafar
+</title>
+<style>
+body{height:auto;
+background-position:center;
+background-repeat:no-repeat;
+background-size:cover;
+background-color: rgba(255,255,255,0.4);
+background-blend-mode: lighten;
+}
+* {box-sizing: border-box}
+body {font-family: arial, Helvetica, sans-serif; margin:0
+font-size:17px;
+text-align:justify;
+letter-spacing: 1px;}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 750px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: black;
+  font-size: 18px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+</style>
+</head>
+<body background="images/back23.png">
+<img src="images/logo1.png" height="90px" width="280px" hspace="15">
+<br>
+<img src="images/a&d.jpeg" height="400px" width="100%">
+<br><br><br><br>
+<center> <font size="6"> <b> Beach Holidays </b> </font> </center>
+<br>
+A vacation or holiday is a leave of absence from a regular occupation, or a specific trip or journey, usually for the purpose of recreation or tourism. 
+People often take a vacation during specific holiday observances, or for specific festivals or celebrations. Vacations are often spent with friends or 
+family.
+A person may take a longer break from work, such as a sabbatical, gap year, or career break.
+The concept of taking a vacation is a recent invention, and has developed through the last two centuries. Historically, the idea of travel for 
+recreation was a luxury that only wealthy people could afford (see Grand Tour). In the Puritan culture of early America, taking a break from work 
+for reasons other than weekly observance of the Sabbath was frowned upon. However, the modern concept of vacation was led by a later religious 
+movement encouraging spiritual retreat and recreation. The notion of breaking from work periodically took root among the middle and working 
+class.
+
+<br><br>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="images/b1.jpg" style="width:100%">
+  <div class="text">Indian Beaches</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="images/b2.jpg" style="width:100%">
+  <div class="text">International Beaches</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="images/b3.jpg" style="width:100%">
+  <div class="text">Beaches Resort</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<br><br><br>
+<center> <font size="6"><b> Beach Tourism </b> </font> </center>
+<br><br> 
+
+
+<img src="images/condolim.jpg" style="float:right;padding-right:50px" hspace="20" width="250px" height="150px" >
+<font size="5"><b> 1. Candolim Beach </b> </font>
+<br> 
+<p> <font size="4"> Candolim lies 15 kilometres from Panjim, the Goan capital, in northern Goa. Beginning at Fort Aguada and merging with Calangute 
+Beach towards the end, it is one of the longest beaches in the state. The beach in itself is very calm and peaceful. What adds to the scenic beauty of the sand and sea are the scrub-covered dunes at the back of the 
+beach, quite popular with tourists.
+A panoramic view of sunset at Candolim Beach in 2018.
+The main Candolim-Calangute Road is packed with shops and restaurants, but the beach front is rather free of any commercial activity apart from 
+some water activities. The area around the beach can be termed as resort free as there 
+aren't any resorts there. The beach has quite a number of inns at reasonable prices with good facilities.
+A fascinating feature about the Candolim Beach is the ship River Princess, which has been stuck at the shores of the beach since 2000 and ever 
+since become quite a tourist attraction in itself. </p>
+
+<br><br>
+
+
+<img src="images/Aksa.jpg" style="float:right;padding-right:50px" hspace="20" width="250px" height="150px">
+<font size="5"><b> 2. Aksa Beach </b> </font>
+<p> <font size="4"> Aksa Beach is a popular beach and a vacation spot in Aksa village at Malad, Mumbai, India. It is situated close to Malvani.[1][2] It is a popular weekend destination . It is dotted with many private cottages and hotels, some of which are rented out to tourists and visitors.
+This beach has INS Hamla (a base of the Indian Navy) at one end and a small beach called "Dana Paani". It is accessible from Malad (West) station by select BEST buses from Borivali railway station, en route to Madh Island, and also by private transport and auto rickshaws. The beach is approximately 9 km from Malad station and 12 km from Borivali. It can also be reached from Andheri (West) railway station. Buses from Andheri Station go to Versova Village. From there a boat takes passengers across the sea to Madh Island. On Madh Island bus numbers 269 and 271 go to Aksa Beach.</p>
+<br><br><br><br>
+<img src="images/dandi.jpg" style="float:right;padding-right:50px" hspace="20" width="250px" height="150px">
+<font size="5"><b> 3. Dandi Beach </b> </font>
+<p> <font size="4"> Dandi Beach is one of the prominent beaches located in Dandi village, Gujarat.[1] Dandi beach is one of the cleanest beaches in the Arabian Sea. Dandi Beach is historically prominent as Mahatma Gandhi led the salt sathyagraha from Sabarmati Ashram (Ahmedabad) to Dandi. This is the beach where Mahatma Gandhi broke the salt tax law of the British. Two monuments of Mahatma Gandhiji are placed in Dandi Beach to express the importance of Dandi Beach in the history of India. One monument is like the India gate commemorating the success of Gandhi breaking the salt law. The next monument is the statue of Gandhi holding the saline mud.</p>
+<br><br><br>
+<a href=" " style="text-decoration:none"> ...Show more </a>
+
+</body>
+</html>
