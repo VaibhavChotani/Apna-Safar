@@ -1,6 +1,8 @@
 # Apna-Safar
 A static travel website developed using HTML, CSS.
 
+Purpose : Purpose of this project was to have hands-on experience how websites are developed.
+
 
 ![ApnaSafar1](https://user-images.githubusercontent.com/46738856/114021090-ebdef400-988d-11eb-9e2d-0e8ac71aecdc.PNG)
 
